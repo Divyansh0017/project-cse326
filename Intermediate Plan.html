@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediate Workout Plan</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f7f9fc; /* Light background for better contrast */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 30px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffc107;
+        }
+        h1, h2, h3, h4 {
+            color: #333;
+        }
+        section {
+            padding: 20px;
+            background: white;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            max-width: 800px;
+        }
+        h2 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        ul {
+            margin: 10px 0;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+            padding-left: 1.5em; /* Increased padding for checkbox alignment */
+            position: relative;
+            transition: background 0.3s; /* Add transition for hover effect */
+            display: flex; /* Flexbox for alignment */
+            align-items: center; /* Center checkbox and text vertically */
+        }
+        ul li:hover {
+            background-color: #f0f8ff; /* Light blue background on hover */
+            border-radius: 4px; /* Rounded corners on hover */
+        }
+        input[type="checkbox"] {
+            margin-right: 10px; /* Space between checkbox and label */
+            transform: scale(1.2); /* Increase size of checkbox */
+            cursor: pointer; /* Change cursor on hover */
+        }
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: #007bff;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #ffc107;
+            text-decoration: underline;
+        }
+        footer a:hover {
+            text-decoration: none;
+        }
+        .workout-description {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #f8f9fa; /* Light grey background for workout descriptions */
+            border-left: 4px solid #007bff;
+            border-radius: 5px; /* Rounded corners for workout descriptions */
+        }
+        .workout-title {
+            margin-top: 10px;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Intermediate Workout Plan</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Welcome to the Intermediate Workout Plan</h2>
+        <p>This plan is designed for those who have some experience with fitness and are ready to take their workouts to the next level.</p>
+
+        <h3>Weekly Workout Schedule</h3>
+        <ul>
+            <li><input type="checkbox"> <strong>Monday:</strong> Upper Body Strength</li>
+            <li><input type="checkbox"> <strong>Tuesday:</strong> Cardio Intervals (30 mins)</li>
+            <li><input type="checkbox"> <strong>Wednesday:</strong> Lower Body Strength</li>
+            <li><input type="checkbox"> <strong>Thursday:</strong> Active Recovery (Yoga or Stretching)</li>
+            <li><input type="checkbox"> <strong>Friday:</strong> Full Body Circuit</li>
+            <li><input type="checkbox"> <strong>Saturday:</strong> Cardio (45 mins run or cycling)</li>
+            <li><input type="checkbox"> <strong>Sunday:</strong> Rest Day</li>
+        </ul>
+
+        <h3>Workout Descriptions</h3>
+
+        <div class="workout-description">
+            <h4 class="workout-title">Upper Body Strength (45 mins)</h4>
+            <ul>
+                <li><input type="checkbox"> 5 mins warm-up (jumping jacks or dynamic stretches)</li>
+                <li><input type="checkbox"> 3 sets of 10-12 reps of bench press</li>
+                <li><input type="checkbox"> 3 sets of 10-12 reps of bent-over rows</li>
+                <li><input type="checkbox"> 3 sets of 10-12 reps of shoulder presses</li>
+                <li><input type="checkbox"> 3 sets of 10-12 reps of bicep curls</li>
+                <li><input type="checkbox"> 5 mins cool-down (static stretches)</li>
+            </ul>
+        </div>
+
+        <div class="workout-description">
+            <h4 class="workout-title">Lower Body Strength (45 mins)</h4>
+            <ul>
+                <li><input type="checkbox"> 5 mins warm-up (leg swings and light jogging)</li>
+                <li><input type="checkbox"> 3 sets of 10-12 reps of squats (weighted if possible)</li>
+                <li><input type="checkbox"> 3 sets of 10-12 reps of deadlifts</li>
+                <li><input type="checkbox"> 3 sets of 10-12 reps of lunges (each leg)</li>
+                <li><input type="checkbox"> 3 sets of 15 reps of calf raises</li>
+                <li><input type="checkbox"> 5 mins cool-down (static stretches)</li>
+            </ul>
+        </div>
+
+        <div class="workout-description">
+            <h4 class="workout-title">Full Body Circuit (30 mins)</h4>
+            <ul>
+                <li><input type="checkbox"> 5 mins warm-up (high knees and butt kicks)</li>
+                <li><input type="checkbox"> Perform each exercise for 30 seconds, rest for 15 seconds between exercises:</li>
+                <li><input type="checkbox"> Push-ups</li>
+                <li><input type="checkbox"> Jump squats</li>
+                <li><input type="checkbox"> Plank jacks</li>
+                <li><input type="checkbox"> Burpees</li>
+                <li><input type="checkbox"> Mountain climbers</li>
+                <li><input type="checkbox"> Repeat the circuit 3 times with a 1-minute rest between rounds.</li>
+                <li><input type="checkbox"> 5 mins cool-down (static stretches)</li>
+            </ul>
+        </div>
+
+        <h3>Tips for Intermediate Lifters</h3>
+        <ul>
+            <li><input type="checkbox"> Gradually increase weights as you get stronger.</li>
+            <li><input type="checkbox"> Focus on maintaining proper form to prevent injuries.</li>
+            <li><input type="checkbox"> Mix up your cardio to keep it engaging (swimming, biking, etc.).</li>
+            <li><input type="checkbox"> Incorporate flexibility training to improve your range of motion.</li>
+            <li><input type="checkbox"> Track your progress and adjust your plan as needed.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Fitness Journey. All Rights Reserved. | <a href="#contact">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

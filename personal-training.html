@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Training</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your main stylesheet -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f7f9fc; /* Light background for better contrast */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 30px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            padding: 10px 15px; /* Increased padding for larger tab */
+            font-size: 18px; /* Increased font size for better visibility */
+            border-radius: 5px; /* Optional: Add border radius for rounded corners */
+        }
+        nav ul li a:hover {
+            color: #ffc107;
+            background-color: rgba(255, 255, 255, 0.2); /* Optional: Add background on hover */
+        }
+        section {
+            padding: 20px;
+            background: white;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            max-width: 800px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        h2 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        ul {
+            margin: 10px 0;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+            padding-left: 1.5em; /* Increased padding for better alignment */
+        }
+        .testimonial-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .testimonial {
+            background-color: #f8f9fa; /* Light grey background for testimonials */
+            padding: 15px;
+            border-left: 4px solid #007bff;
+            margin: 10px 0;
+            border-radius: 5px;
+            width: 90%; /* Limit width for better alignment */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .testimonial:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: #007bff;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #ffc107;
+            text-decoration: underline;
+        }
+        footer a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Personal Training</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>One-on-One Training</h2>
+        <p>Our personal trainers provide customized workout plans tailored to your fitness goals. With individual attention and expertise, you can achieve results faster and more effectively.</p>
+
+        <h3 id="benefits">Benefits of Personal Training</h3>
+        <ul>
+            <li>Personalized fitness assessment to identify strengths and weaknesses.</li>
+            <li>Motivation and accountability to keep you on track.</li>
+            <li>Expert guidance on form and technique to prevent injuries.</li>
+            <li>Flexible scheduling to fit your busy lifestyle.</li>
+            <li>Nutrition advice and support to complement your training.</li>
+            <li>Access to specialized training programs tailored to your needs.</li>
+            <li>Enhanced recovery techniques to minimize injury risk.</li>
+            <li>Support in setting and achieving specific fitness goals.</li>
+            <li>Improved mental health through structured fitness.</li>
+            <li>Opportunity to learn new exercises and techniques to keep workouts engaging.</li>
+            <li>Regular progress tracking to ensure continuous improvement.</li>
+            <li>Access to a supportive community and network for encouragement.</li>
+            <li>Tailored workouts for specific populations (e.g., seniors, athletes, etc.).</li>
+        </ul>
+
+        <h3 id="testimonials">Client Testimonials</h3>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p><strong>Sarah J.</strong>: "My personal trainer has transformed my fitness journey! I never imagined I could feel this strong and confident. The support and motivation I receive are incredible!"</p>
+            </div>
+            <div class="testimonial">
+                <p><strong>Mark T.</strong>: "The personalized approach to training has been a game-changer for me. The workouts are challenging yet achievable, and I've seen amazing results in just a few months!"</p>
+            </div>
+            <div class="testimonial">
+                <p><strong>Lisa K.</strong>: "The nutrition advice has completely changed my perspective on healthy eating. I feel more energetic and healthier than ever, both physically and mentally!"</p>
+            </div>
+            <div class="testimonial">
+                <p><strong>James W.</strong>: "I've tried several gyms, but this personal training program is by far the best. My trainer really understands my needs and pushes me to exceed my limits!"</p>
+            </div>
+            <div class="testimonial">
+                <p><strong>Emily R.</strong>: "I appreciate the friendly and motivating environment. My trainer is always supportive, making workouts fun while helping me stay on track!"</p>
+            </div>
+            <div class="testimonial">
+                <p><strong>David S.</strong>: "I was hesitant to start personal training, but it has been one of the best decisions I've made. The tailored workouts have helped me achieve my fitness goals quickly!"</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Fitness Journey. All Rights Reserved. | <a href="#contact">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

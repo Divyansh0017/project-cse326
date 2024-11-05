@@ -1,0 +1,383 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #0b0303;
+    background-color: #ffffff;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(45deg, #4e6a4e, #47b64d);
+    color: #f5c608;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: center; /* Centering nav items */
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(248, 249, 249);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s, color 0.3s; /* Added color transition */
+}
+
+/* Hover Effect for Navigation Links */
+nav ul li a:hover {
+    background-color: #c33232;
+    transform: scale(1.05);
+    color: #ffffff; /* Change text color on hover */
+}
+
+/* Dropdown Styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ecbdbd;
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Banner Section */
+.banner {
+    background-image: url(/divyansh/360_F_429356296_CVQ5LkC6Pl55kUNLqLisVKgTw9vjyif1.jpg);
+    background-size: cover;
+    background-position: center;
+    color: rgb(251, 251, 254);
+    padding: 100px ;
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    box-shadow: inset 0 0 10px rgba(14, 0, 0, 0.7);
+}
+
+.banner h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgb(6, 5, 5);
+    transition: transform 0.3s, color 0.3s; /* Added color transition */
+}
+
+.banner h1:hover {
+    transform: scale(1.05);
+    color: #ffdd57; /* Change text color on hover */
+}
+
+.banner p {
+    font-size: 1.5em;
+    text-shadow: 1px 1px 3px rgba(45, 4, 4, 0.5);
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Button Styles */
+.btn {
+    background-color: #8770e3;
+    color: rgb(242, 239, 239);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(31, 203, 31);
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Content Section Styles */
+.content-section {
+    padding: 50px 0;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Services Section */
+#services {
+    background-color: #dcf1e3;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 30%;
+    background-color: #efd4d4;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(15, 1, 1, 0.2);
+}
+
+/* Workout Plans Section */
+#plans {
+    background-color: #dbf2f5;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.plan {
+    border: 1px solid #120101;
+    padding: 20px;
+    width: 30%;
+    background-color: #f1f8e9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(23, 1, 1, 0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    border: 1px solid #110101;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #e24414;
+    color: rgb(253, 252, 255);
+}
+
+/* Testimonials Section */
+#testimonials {
+    background-color: #ebebf5;
+    text-align: center;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial {
+    border: 1px solid #0b0000;
+    padding: 20px;
+    width: 30%;
+    background-color: #ed8f8f;
+    box-shadow: 0 4px 6px rgba(149, 144, 144, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(210, 44, 44, 0.2);
+}
+
+/* Blog Section */
+#blog {
+    background-color: #def8fb;
+}
+
+article {
+    border: 1px solid #ddd;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f1f8e9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Gallery Section */
+#gallery {
+    background-color: #d6fdff;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-container img {
+    width: 180px;
+    height: 250px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section */
+#contact {
+    background-color: #cbeaf6;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Added transition for input focus effect */
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #4e6a4e; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+form button {
+    padding: 10px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Added transition for button */
+}
+
+form button:hover {
+    background-color: lightgreen;
+}
+
+/* BMI Calculator Section */
+#bmi-calculator {
+    background-color: #cad8df;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(13, 0, 0);
+    margin: 20px;
+    text-align: center;
+}
+
+#bmi-calculator input {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #070000;
+    border-radius: 10px;
+    width: 60px;
+    transition: border-color 0.3s; /* Added transition for input focus effect */
+}
+
+#bmi-calculator input:focus {
+    border-color: #0e0f0e; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+#bmi-calculator button {
+    padding: 10px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Added transition for button */
+}
+
+#bmi-calculator button:hover {
+    background-color: lightgreen;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #2e7d32;
+    color: #fff;
+    position: relative;
+    box-shadow: 0 -2px 5px rgba(183, 173, 173, 0.3);
+}
+
+footer a {
+    color: #ff5722;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
